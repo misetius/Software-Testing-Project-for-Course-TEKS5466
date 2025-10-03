@@ -1,0 +1,14 @@
+requests
+robotframework
+robotframework-browser
+robotframework-appiumlibrary
+robotframework-jsonlibrary
+robotframework-pythonlibcore
+robotframework-seleniumlibrary
+robotframework-tidy
+rpaframework-core
+rpaframework-recognition
+robotframework-pythonlibcore
+robotframework-retryfailed
+selenium
+psycopg2-binary
