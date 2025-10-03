@@ -163,7 +163,7 @@ Open Todo
 
 
 Register Second Account
-    New Browser    headless=${FALSE}
+    New Browser    headless=${TRUE}
     New Page    ${URL}/register
     Fill Text    id=username    ${SECONDUSERNAME}
     Fill Text    id=password    ${PASSWORD}    
@@ -171,7 +171,7 @@ Register Second Account
     Get Url    ==    http://localhost:4321/todo-lists
 
 Register
-    New Browser    headless=${FALSE}
+    New Browser    headless=${TRUE}
     New Page    ${URL}/register
     Fill Text    id=username    ${USERNAME}
     Fill Text    id=password    ${PASSWORD}    
@@ -179,14 +179,14 @@ Register
     Get Url    ==    http://localhost:4321/todo-lists
 
 Login
-    New Browser    headless=${FALSE}
+    New Browser    headless=${TRUE}
     New Page    ${URL}/login
     Fill Text    id=username    ${USERNAME}
     Fill Text    id=password    ${PASSWORD}    
     Click    //html/body/main/astro-island/div/form/div[3]/button[2]
 
 Login Second
-    New Browser    headless=${FALSE}
+    New Browser    headless=${TRUE}
     New Page    ${URL}/login
     Fill Text    id=username    ${SECONDUSERNAME}
     Fill Text    id=password    ${PASSWORD}    
@@ -254,4 +254,5 @@ Create Todo Items
     Click    //html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]
 
 Delete Todo Items
+
     Click    //html/body/main/astro-island/div/div[3]/div[2]/div/button[3]
