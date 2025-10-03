@@ -37,4 +37,4 @@ jobs:
 
 
       - name: Run Robot Framework e2e-tests
-        run: robot --exclude smoke --listener RetryFailed tests\  
+        run: robot --listener RetryFailed e2e-tests\  
