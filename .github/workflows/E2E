@@ -36,5 +36,5 @@ jobs:
           rfbrowser init
 
 
-      - name: Run Robot Framework tests
+      - name: Run Robot Framework e2e-tests
         run: robot --listener RetryFailed tests\  
