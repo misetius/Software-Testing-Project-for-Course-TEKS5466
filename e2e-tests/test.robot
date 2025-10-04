@@ -61,7 +61,7 @@ Modify todo list
     Get Text    body    contains    first
 
 Create Items And Delete Items
-    [Tags]    test:retry(10)    -smoke
+    [Tags]    test:retry(10)    
     Erase_databases
     Register
     Create One Todo
