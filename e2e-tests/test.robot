@@ -1,7 +1,7 @@
 *** Settings ***
 Library    Browser
 Library    script.py
-
+Test Tags    smoke
 
 
 *** Variables ***
@@ -18,14 +18,14 @@ ${SECONDUSERNAME} =    usertest
 *** Test Cases ***
 
 Registering Should Be Possible
-    [Tags]    test:retry(10)
+    [Tags]    test:retry(10)    -smoke
     Register
     Get Text    body    contains    first
 
  
 
 Valid Logout And Login
-    [Tags]    test:retry(10)
+    [Tags]    test:retry(10)    -smoke
     Erase_databases
     Register
     Get Url    ==    http://localhost:4321/todo-lists
@@ -37,7 +37,7 @@ Valid Logout And Login
     Get Url    ==    http://localhost:4321/todo-lists
 
 Create and delete Todos
-    [Tags]    test:retry(10)
+    [Tags]    test:retry(10)    -smoke
     Erase_databases
     Register
     Create Two Todo Lists
@@ -61,7 +61,7 @@ Modify todo list
     Get Text    body    contains    first
 
 Create Items And Delete Items
-    [Tags]    test:retry(10)
+    [Tags]    test:retry(10)    -smoke
     Erase_databases
     Register
     Create One Todo
@@ -161,6 +161,8 @@ Go Back To Home Page
 Open Todo
     Click    //html/body/main/astro-island/div/div[3]/div/div/a
 
+Open Shared Todo List
+    Click    //html/body/main/astro-island/div/div[5]/div/div/a
 
 Register Second Account
     New Browser    headless=${TRUE}
