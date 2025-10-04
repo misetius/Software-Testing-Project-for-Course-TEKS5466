@@ -59,7 +59,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install k6
       - name: Run Performance Test
-        run: k6 run load_testing\load_test.js  
+        run: k6 run load_testing/load_test.js 
        
       
       
