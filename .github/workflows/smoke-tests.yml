@@ -44,18 +44,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       - name: Setup Web Application
         run: docker compose -f compose.dev.yml up -d
 
-      - name: Setup K6
-        uses: grafana/setup-k6-action@v1
+      
 
-      - name: Run local k6 test
-        uses: grafana/run-k6-action@v1
-        with:
-          path: load_testing\load_test.js
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          # Install additional dependencies if needed
+          sudo apt-get install k6
+      - name: Run Smoke Tests
+        run: k6 run run load_testing\load_test.js  
        
       
       
