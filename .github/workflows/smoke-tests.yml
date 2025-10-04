@@ -36,5 +36,5 @@ jobs:
           rfbrowser init
 
 
-      - name: Run Robot Framework e2e-tests
+      - name: Run Smoke Tests
         run: robot --exclude smoke --listener RetryFailed e2e-tests\  
