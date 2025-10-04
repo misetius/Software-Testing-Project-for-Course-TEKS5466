@@ -51,13 +51,10 @@ jobs:
 
       
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          # Install additional dependencies if needed
-          sudo apt-get install k6
-      - name: Run Smoke Tests
-        run: k6 run run load_testing\load_test.js  
+      - name: Install k6
+        run: sudo apt-get install -y k6
+      - name: Run Performance Test
+        run: k6 run load_testing\load_test.js  
        
       
       
