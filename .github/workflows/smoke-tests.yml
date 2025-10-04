@@ -51,11 +51,11 @@ jobs:
 
       - name: Setup K6
         uses: grafana/setup-k6-action@v1
-        
+
       - name: Run local k6 test
         uses: grafana/run-k6-action@v1
         with:
-          path: load_tests\
+          path: load_testing\load_test.js
        
       
       
