@@ -8,10 +8,7 @@ pip install psycopg2-binary
 pip install requests
 ```
 
-For some reason registering to app is a bit flaky process. Because of this we need to install robotframework-retryfailed. 
-```
-pip install robotframework-retryfailed
-```
+For some reason registering to app is a bit flaky process. Because of this tests use keyword "Wait Until Keyword Succeeds" for registering and login. 
 
 After installing the needed dependencies start the development environment in the folder of the todo-list app with
 

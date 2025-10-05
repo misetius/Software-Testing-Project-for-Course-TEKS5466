@@ -18,17 +18,16 @@ ${SECONDUSERNAME} =    usertest
 *** Test Cases ***
 
 Registering Should Be Possible
-    [Tags]    test:retry(10)    -smoke
-    Register
+    [Tags]    -smoke
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Register
     Get Text    body    contains    first
 
  
 
 Valid Logout And Login
-    [Tags]    test:retry(10)    -smoke
+    [Tags]    -smoke
     Erase_databases
-    Register
-    Get Url    ==    http://localhost:4321/todo-lists
+    ${result}    Wait Until Keyword Succeeds    10x    200ms    Register
     Click    text="Logout"
     Get Url    ==    http://localhost:4321/login 
     Get Text    body    contains    Welcome
@@ -37,9 +36,9 @@ Valid Logout And Login
     Get Url    ==    http://localhost:4321/todo-lists
 
 Create and delete Todos
-    [Tags]    test:retry(10)    -smoke
+    [Tags]    -smoke
     Erase_databases
-    Register
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Register
     Create Two Todo Lists
     Get Text    body    contains    "Pick up the groceries" 
     Get Text    body    contains    "Pick up the keys"
@@ -48,9 +47,8 @@ Create and delete Todos
     
 
 Modify todo list
-    [Tags]    test:retry(10)
     Erase_databases
-    Register
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Register
     Create Two Todo Lists
     Get Text    body    contains    "Pick up the groceries" 
     Get Text    body    contains    "Pick up the keys"
@@ -60,10 +58,9 @@ Modify todo list
     Delete Modified Lists
     Get Text    body    contains    first
 
-Create Items And Delete Items
-    [Tags]    test:retry(10)    
+Create Items And Delete Items 
     Erase_databases
-    Register
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Register
     Create One Todo
     Open Todo
     Create Todo Items
@@ -75,9 +72,8 @@ Create Items And Delete Items
     Delete Todo List
 
 Create Items And Modify Items
-    [Tags]    test:retry(10)
     Erase_databases
-    Register
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Register
     Create One Todo
     Open Todo
     Create Todo Items
@@ -89,9 +85,8 @@ Create Items And Modify Items
     Delete Todo List
 
 Create Items And Mark Them As Completed
-    [Tags]    test:retry(10)
     Erase_databases
-    Register
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Register
     Create One Todo
     Open Todo
     Create Todo Items
@@ -103,16 +98,14 @@ Create Items And Mark Them As Completed
     Delete Todo List 
 
 Register Another User
-    [Tags]    test:retry(10)
     Erase_databases
-    Register Second Account
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Register Second Account
     
 
 Sharing Todo Lists To Another User
-    [Tags]    test:retry(10)
     erase_todo_lists_and_items
     erase_test_user
-    Register
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Register
     Create One Todo
     Open Todo
     Create Todo Items
@@ -123,10 +116,9 @@ Sharing Todo Lists To Another User
     
 
 Get Shared Todolist
-    [Tags]    test:retry(10)
-    Login Second
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Login Second
     Get Text    body    contains    Shared
-    Click    //html/body/main/astro-island/div/div[5]/div/div/a 
+    Open Shared Todo List 
     Get Text    body    contains    Members
     Get Text    body    contains    Tomato
 
@@ -165,7 +157,7 @@ Open Shared Todo List
     Click    //html/body/main/astro-island/div/div[5]/div/div/a
 
 Register Second Account
-    New Browser    headless=${TRUE}
+    New Browser    headless=${FALSE}
     New Page    ${URL}/register
     Fill Text    id=username    ${SECONDUSERNAME}
     Fill Text    id=password    ${PASSWORD}    
@@ -173,7 +165,7 @@ Register Second Account
     Get Url    ==    http://localhost:4321/todo-lists
 
 Register
-    New Browser    headless=${TRUE}
+    New Browser    headless=${FALSE}
     New Page    ${URL}/register
     Fill Text    id=username    ${USERNAME}
     Fill Text    id=password    ${PASSWORD}    
@@ -181,14 +173,14 @@ Register
     Get Url    ==    http://localhost:4321/todo-lists
 
 Login
-    New Browser    headless=${TRUE}
+    New Browser    headless=${FALSE}
     New Page    ${URL}/login
     Fill Text    id=username    ${USERNAME}
     Fill Text    id=password    ${PASSWORD}    
     Click    //html/body/main/astro-island/div/form/div[3]/button[2]
 
 Login Second
-    New Browser    headless=${TRUE}
+    New Browser    headless=${FALSE}
     New Page    ${URL}/login
     Fill Text    id=username    ${SECONDUSERNAME}
     Fill Text    id=password    ${PASSWORD}    

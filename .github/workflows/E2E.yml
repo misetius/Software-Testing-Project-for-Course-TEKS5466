@@ -36,4 +36,4 @@ jobs:
 
 
       - name: Run Robot Framework e2e-tests
-        run: robot --listener RetryFailed e2e-tests\  
+        run: robot e2e-tests\  

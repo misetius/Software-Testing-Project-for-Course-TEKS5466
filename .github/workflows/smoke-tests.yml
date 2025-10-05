@@ -37,7 +37,7 @@ jobs:
 
 
       - name: Run Smoke Tests
-        run: robot --exclude smoke --listener RetryFailed e2e-tests\   
+        run: robot --exclude smoke e2e-tests\   
 
 
   run-test:

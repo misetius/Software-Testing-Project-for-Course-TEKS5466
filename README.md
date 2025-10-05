@@ -6,15 +6,6 @@ A simple web application for creating and managing todo lists with user accounts
 
 To run the application, make sure you have Docker and Docker Compose installed. Then, in the project directory, start the containers with:
 
-```
-docker compose up
-```
-
-
-Once the services are running, open your browser and go to http://localhost
- to use the app.
-
-For development with hot reloading, use:
 
 ```
 docker compose -f compose.dev.yml up
