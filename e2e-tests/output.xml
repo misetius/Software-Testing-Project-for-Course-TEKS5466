@@ -1,0 +1,2417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.1 on win32)" generated="2025-10-06T11:11:15.129244" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\miska\Desktop\swt-todo-list-app-main\Software-Testing-Project-for-Course-TEKS5466\e2e-tests\test.robot">
+<test id="s1-t1" name="Registering Should Be Possible" line="20">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:15.265921" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\miska\\Desktop\\swt-todo-list-app-main\\Software-Testing-Project-for-Course-TEKS5466\\e2e-tests\\browser\\traces\\temp\\9eb40c36-aa23-4abd-923b-de878071a764"}</msg>
+<msg time="2025-10-06T11:11:15.285881" level="INFO">Starting Browser process C:\Users\miska\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:51446</msg>
+<msg time="2025-10-06T11:11:15.917506" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\miska\\Desktop\\swt-todo-list-app-main\\Software-Testing-Project-for-Course-TEKS5466\\e2e-tests\\browser\\traces\\temp\\9eb40c36-aa23-4abd-923b-de878071a764"}</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:15.265444" elapsed="0.652194"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:16.126061" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<msg time="2025-10-06T11:11:16.126122" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:15.917805" elapsed="0.208420"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:16.126828" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:16.126377" elapsed="0.033603"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:16.160816" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:16.160240" elapsed="0.011823"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:16.172813" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:16.172268" elapsed="0.061392"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-06T11:11:17.299779" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-06T11:11:17.299873" level="INFO">See also file:///C:/Users/miska/Desktop/swt-todo-list-app-main/Software-Testing-Project-for-Course-TEKS5466/e2e-tests/playwright-log.txt for additional details.</msg>
+<msg time="2025-10-06T11:11:17.300088" level="FAIL">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</msg>
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="FAIL" start="2025-10-06T11:11:16.233807" elapsed="1.068581">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<status status="FAIL" start="2025-10-06T11:11:15.265189" elapsed="2.037335">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:17.503938" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:17.506000" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:17.506075" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:17.503563" elapsed="0.002555"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:17.673698" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:17.506235" elapsed="0.167612"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:17.674376" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:17.673981" elapsed="0.027425"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:17.701970" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:17.701574" elapsed="0.030978"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:17.733135" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:17.732739" elapsed="0.053318"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:17.786430" elapsed="0.257976"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:17.503248" elapsed="0.541266"/>
+</kw>
+<msg time="2025-10-06T11:11:18.044604" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Register</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:15.264871" elapsed="2.779756"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:18.104385" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\n\nCreate your first todo list with the button above\n\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>first</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.044829" elapsed="0.059638"/>
+</kw>
+<msg time="2025-10-06T11:11:18.112792" level="INFO">Switching context to context=b2e3d05c-e2f0-455c-8635-877836bd8d01 in CURRENT</msg>
+<msg time="2025-10-06T11:11:18.117341" level="INFO">Successfully changed active context: context=b2e3d05c-e2f0-455c-8635-877836bd8d01</msg>
+<msg time="2025-10-06T11:11:18.122908" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-10-06T11:11:15.264192" elapsed="2.840621"/>
+</test>
+<test id="s1-t2" name="Valid Logout And Login" line="27">
+<kw name="Erase Databases" owner="script">
+<status status="PASS" start="2025-10-06T11:11:18.125660" elapsed="0.032309"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:18.159290" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:18.160535" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:18.160598" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.158757" elapsed="0.001879"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:18.331400" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<msg time="2025-10-06T11:11:18.331460" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.160732" elapsed="0.170821"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:18.332081" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.331678" elapsed="0.035249"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:18.367804" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.367186" elapsed="0.008095"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:18.375999" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.375488" elapsed="0.067783"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.443414" elapsed="0.273024"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:18.158551" elapsed="0.557986"/>
+</kw>
+<msg time="2025-10-06T11:11:18.716620" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>10x</arg>
+<arg>200ms</arg>
+<arg>Register</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.158253" elapsed="0.558429"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:18.717452" level="INFO">Clicks the element 'text="Logout"'.</msg>
+<arg>text="Logout"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.716956" elapsed="0.133253"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/login</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.850601" elapsed="0.002017"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:18.906147" level="INFO">Text: 'Todo Manager\nLogin or sign up to get started\nWelcome to Todo Manager\n\nPlease login to use the application.\n\nIn case you do not have an account, you can register through here or through the button below on the left.\n\nUsername *\nPassword *\nTo Registration\nLogin\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Welcome</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.852942" elapsed="0.053287"/>
+</kw>
+<kw name="Login">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:18.907119" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:18.908706" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:18.908764" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.906774" elapsed="0.002026"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:19.049484" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/login</msg>
+<arg>${URL}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:18.908900" elapsed="0.140714"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:19.050145" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.049743" elapsed="0.025458"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:19.075936" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.075396" elapsed="0.009521"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:19.085414" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.085056" elapsed="0.047686"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:18.906490" elapsed="0.226345"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:19.426533" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\n\nCreate your first todo list with the button above\n\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>first</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.133074" elapsed="0.293629"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.426935" elapsed="0.001450"/>
+</kw>
+<msg time="2025-10-06T11:11:19.435256" level="INFO">Switching context to context=b82d15e4-4321-41c8-a72d-265f705e381e in CURRENT</msg>
+<msg time="2025-10-06T11:11:19.438719" level="INFO">Successfully changed active context: context=b82d15e4-4321-41c8-a72d-265f705e381e</msg>
+<msg time="2025-10-06T11:11:19.442551" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-10-06T11:11:18.123784" elapsed="1.304791"/>
+</test>
+<test id="s1-t3" name="Create and delete Todos" line="38">
+<kw name="Erase Databases" owner="script">
+<status status="PASS" start="2025-10-06T11:11:19.445766" elapsed="0.027574"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:19.474442" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:19.475667" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:19.475732" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.474093" elapsed="0.001674"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:19.639406" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<msg time="2025-10-06T11:11:19.639464" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.475859" elapsed="0.163690"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:19.640084" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.639679" elapsed="0.027005"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:19.667227" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.666825" elapsed="0.008542"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:19.676180" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.675644" elapsed="0.069486"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.745279" elapsed="0.339286"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:19.473890" elapsed="0.610766"/>
+</kw>
+<msg time="2025-10-06T11:11:20.084727" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Register</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:19.473606" elapsed="0.611139"/>
+</kw>
+<kw name="Create Two Todo Lists">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:20.085934" level="INFO">Clicks the element 'text="New todo list"'.</msg>
+<arg>text="New todo list"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.085511" elapsed="0.137445"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:20.223474" level="INFO">Fills the text 'Pick up the groceries' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Pick up the groceries</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.223103" elapsed="0.006468"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:20.230047" level="INFO">Fills the text 'Ask instructions from the family' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Ask instructions from the family</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.229710" elapsed="0.004942"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:20.235064" level="INFO">Clicks the element 'text="Create"'.</msg>
+<arg>text="Create"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.234769" elapsed="0.030721"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:20.266014" level="INFO">Clicks the element 'text="New todo list"'.</msg>
+<arg>text="New todo list"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.265638" elapsed="0.065384"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:20.331518" level="INFO">Fills the text 'Pick up the keys' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Pick up the keys</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.331160" elapsed="0.004509"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:20.336092" level="INFO">Fills the text 'Ask instructions from the family' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Ask instructions from the family</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.335788" elapsed="0.004623"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:20.340842" level="INFO">Clicks the element 'text="Create"'.</msg>
+<arg>text="Create"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.340530" elapsed="0.040864"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:20.085166" elapsed="0.296325"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:20.399251" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\nPick up the groceries\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the groceries"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nPick up the keys\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the keys"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>"Pick up the groceries"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.381893" elapsed="0.017530"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:20.406459" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\nPick up the groceries\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the groceries"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nPick up the keys\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the keys"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>"Pick up the keys"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.399653" elapsed="0.006880"/>
+</kw>
+<kw name="Delete Two Todo Lists">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:20.407309" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[1]/div/div/button[3]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[1]/div/div/button[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.407028" elapsed="0.042853"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:20.450453" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[2]/div/div/button[3]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[2]/div/div/button[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.450031" elapsed="0.067119"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:20.406779" elapsed="0.110518"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:20.528344" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\n\nCreate your first todo list with the button above\n\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>first</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.517524" elapsed="0.010899"/>
+</kw>
+<msg time="2025-10-06T11:11:20.534325" level="INFO">Switching context to context=5391de9e-e578-4b46-a611-a8efdcfa8d32 in CURRENT</msg>
+<msg time="2025-10-06T11:11:20.537731" level="INFO">Successfully changed active context: context=5391de9e-e578-4b46-a611-a8efdcfa8d32</msg>
+<msg time="2025-10-06T11:11:20.541107" level="INFO">Successfully closed Context</msg>
+<status status="PASS" start="2025-10-06T11:11:19.443898" elapsed="1.084703"/>
+</test>
+<test id="s1-t4" name="Modify todo list" line="49">
+<kw name="Erase Databases" owner="script">
+<status status="PASS" start="2025-10-06T11:11:20.545162" elapsed="0.026305"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:20.572971" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:20.574198" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:20.574257" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.572531" elapsed="0.001760"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:20.724628" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<msg time="2025-10-06T11:11:20.724763" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.574377" elapsed="0.150634"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:20.725751" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.725188" elapsed="0.023469"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:20.749183" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.748795" elapsed="0.007496"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:20.756802" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.756433" elapsed="0.066764"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.823341" elapsed="0.269348"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:20.572316" elapsed="0.520465"/>
+</kw>
+<msg time="2025-10-06T11:11:21.092887" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Register</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:20.571929" elapsed="0.520999"/>
+</kw>
+<kw name="Create Two Todo Lists">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:21.094486" level="INFO">Clicks the element 'text="New todo list"'.</msg>
+<arg>text="New todo list"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.093823" elapsed="0.136969"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.231351" level="INFO">Fills the text 'Pick up the groceries' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Pick up the groceries</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.230946" elapsed="0.010842"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.242743" level="INFO">Fills the text 'Ask instructions from the family' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Ask instructions from the family</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.242055" elapsed="0.010411"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:21.253090" level="INFO">Clicks the element 'text="Create"'.</msg>
+<arg>text="Create"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.252688" elapsed="0.028612"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:21.281858" level="INFO">Clicks the element 'text="New todo list"'.</msg>
+<arg>text="New todo list"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.281492" elapsed="0.068587"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.350572" level="INFO">Fills the text 'Pick up the keys' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Pick up the keys</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.350214" elapsed="0.005331"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.356005" level="INFO">Fills the text 'Ask instructions from the family' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Ask instructions from the family</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.355671" elapsed="0.005878"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:21.362139" level="INFO">Clicks the element 'text="Create"'.</msg>
+<arg>text="Create"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.361689" elapsed="0.037489"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:21.093311" elapsed="0.306134"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.417796" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\nPick up the groceries\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the groceries"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nPick up the keys\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the keys"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>"Pick up the groceries"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.399653" elapsed="0.018224"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.425184" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\nPick up the groceries\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the groceries"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nPick up the keys\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the keys"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>"Pick up the keys"</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.418105" elapsed="0.007163"/>
+</kw>
+<kw name="Change Values Of Todo List">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:21.426202" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[2]/div/div/button[1]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[2]/div/div/button[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.425824" elapsed="0.040866"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.467165" level="INFO">Fills the text 'Go to the gym' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Go to the gym</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.466822" elapsed="0.004805"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.472054" level="INFO">Fills the text 'Chest day' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Chest day</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.471743" elapsed="0.005364"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:21.477573" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[2]/form/div/div[2]/button[1]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[2]/form/div/div[2]/button[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.477239" elapsed="0.038454"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:21.425556" elapsed="0.090250"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.528311" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\nPick up the groceries\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the groceries"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nGo to the gym\nChest day\nno todos\nDeleting todo list "Go to the gym"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>gym</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.516000" elapsed="0.012403"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.535507" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\nPick up the groceries\nAsk instructions from the family\nno todos\nDeleting todo list "Pick up the groceries"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nGo to the gym\nChest day\nno todos\nDeleting todo list "Go to the gym"\n\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Chest</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.528660" elapsed="0.006918"/>
+</kw>
+<kw name="Delete Modified Lists">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:21.536313" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[1]/div/div/button[3]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[1]/div/div/button[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.536044" elapsed="0.025416"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:21.562019" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[2]/div/div/button[3]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[2]/div/div/button[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.561613" elapsed="0.034287"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:21.535810" elapsed="0.060268"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.605568" level="INFO">Text: 'Todo Manager\nMy todo lists\ntestuser Logout\nMy todo lists\nNew todo list\n\nCreate your first todo list with the button above\n\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>first</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.596391" elapsed="0.009258"/>
+</kw>
+<msg time="2025-10-06T11:11:21.612400" level="INFO">Switching context to context=03643fc8-616a-4289-93db-36fabb535e7f in CURRENT</msg>
+<msg time="2025-10-06T11:11:21.615349" level="INFO">Successfully changed active context: context=03643fc8-616a-4289-93db-36fabb535e7f</msg>
+<msg time="2025-10-06T11:11:21.618166" level="INFO">Successfully closed Context</msg>
+<tag>smoke</tag>
+<status status="PASS" start="2025-10-06T11:11:20.542591" elapsed="1.063355"/>
+</test>
+<test id="s1-t5" name="Create Items And Delete Items" line="61">
+<kw name="Erase Databases" owner="script">
+<status status="PASS" start="2025-10-06T11:11:21.621358" elapsed="0.045565"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:21.668058" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:21.669221" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:21.669284" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.667721" elapsed="0.001598"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:21.832077" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<msg time="2025-10-06T11:11:21.832133" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.669408" elapsed="0.162811"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.832815" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.832341" elapsed="0.026215"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:21.859467" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.858798" elapsed="0.007553"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:21.866878" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.866493" elapsed="0.039834"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-06T11:11:22.975973" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-06T11:11:22.976071" level="INFO">See also file:///C:/Users/miska/Desktop/swt-todo-list-app-main/Software-Testing-Project-for-Course-TEKS5466/e2e-tests/playwright-log.txt for additional details.</msg>
+<msg time="2025-10-06T11:11:22.976147" level="FAIL">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</msg>
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="FAIL" start="2025-10-06T11:11:21.906462" elapsed="1.070654">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<status status="FAIL" start="2025-10-06T11:11:21.667514" elapsed="1.309719">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:23.178979" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:23.181050" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:23.181120" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.178393" elapsed="0.002764"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:23.332660" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.181260" elapsed="0.151548"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:23.333382" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.332936" elapsed="0.024303"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:23.357802" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.357398" elapsed="0.009224"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:23.367165" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.366769" elapsed="0.049478"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.416414" elapsed="0.263449"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:23.177981" elapsed="0.501972"/>
+</kw>
+<msg time="2025-10-06T11:11:23.680031" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Register</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:21.667200" elapsed="2.012852"/>
+</kw>
+<kw name="Create One Todo">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:23.680875" level="INFO">Clicks the element 'text="New todo list"'.</msg>
+<arg>text="New todo list"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.680543" elapsed="0.100613"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:23.781660" level="INFO">Fills the text 'Pick up the groceries' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Pick up the groceries</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.781307" elapsed="0.005093"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:23.786842" level="INFO">Fills the text 'Ask instructions from the family' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Ask instructions from the family</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.786523" elapsed="0.006387"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:23.793455" level="INFO">Clicks the element 'text="Create"'.</msg>
+<arg>text="Create"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.793067" elapsed="0.039492"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:23.680289" elapsed="0.152367"/>
+</kw>
+<kw name="Open Todo">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:23.833396" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/a'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.833111" elapsed="0.078257"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:23.832854" elapsed="0.078606"/>
+</kw>
+<kw name="Create Todo Items">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:23.912241" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.911951" elapsed="0.036613"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:23.949032" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:23.948699" elapsed="0.448936"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:24.398101" level="INFO">Fills the text 'Tomato or Tomato' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Tomato or Tomato</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.397764" elapsed="0.004675"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:24.402852" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.402555" elapsed="0.029554"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:24.432575" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.432241" elapsed="0.051016"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:24.483750" level="INFO">Fills the text 'Potato or Potato' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Potato or Potato</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.483395" elapsed="0.004590"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:24.488406" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.488104" elapsed="0.049716"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:23.911691" elapsed="0.626218"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:24.556655" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Tomato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.538118" elapsed="0.018619"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:24.564100" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Potato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.556970" elapsed="0.007207"/>
+</kw>
+<kw name="Delete Todo Items">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:24.564953" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[2]/div/button[3]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[2]/div/button[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.564671" elapsed="0.030875"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:24.564421" elapsed="0.031221"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:24.606290" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nTomato or Tomato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>not contains</arg>
+<arg>Potato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.595879" elapsed="0.010493"/>
+</kw>
+<kw name="Go Back To Home Page">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:24.607255" level="INFO">Clicks the element '//html/body/nav/div/div/astro-island/div/a'.</msg>
+<arg>//html/body/nav/div/div/astro-island/div/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.606966" elapsed="0.087138"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:24.606673" elapsed="0.087522"/>
+</kw>
+<kw name="Delete Todo List">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:24.695003" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/div/button[3]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/div/button[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.694686" elapsed="0.119355"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:24.814508" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/dialog/div/div/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/dialog/div/div/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.814174" elapsed="0.039537"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:24.694398" elapsed="0.159414"/>
+</kw>
+<msg time="2025-10-06T11:11:24.864855" level="INFO">Switching context to context=fdbb9126-8e98-45ee-af65-6183ed4007af in CURRENT</msg>
+<msg time="2025-10-06T11:11:24.868582" level="INFO">Successfully changed active context: context=fdbb9126-8e98-45ee-af65-6183ed4007af</msg>
+<msg time="2025-10-06T11:11:24.872804" level="INFO">Successfully closed Context</msg>
+<tag>smoke</tag>
+<status status="PASS" start="2025-10-06T11:11:21.618727" elapsed="3.235321"/>
+</test>
+<test id="s1-t6" name="Create Items And Modify Items" line="74">
+<kw name="Erase Databases" owner="script">
+<status status="PASS" start="2025-10-06T11:11:24.875876" elapsed="0.027006"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:24.903969" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:24.905135" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:24.905201" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.903632" elapsed="0.001603"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:25.120601" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<msg time="2025-10-06T11:11:25.120692" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.905328" elapsed="0.215620"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:25.122047" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:25.121163" elapsed="0.044894"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:25.166840" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:25.166267" elapsed="0.013105"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:25.180370" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:25.179616" elapsed="0.048435"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-06T11:11:26.288377" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-3.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-3.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-06T11:11:26.288468" level="INFO">See also file:///C:/Users/miska/Desktop/swt-todo-list-app-main/Software-Testing-Project-for-Course-TEKS5466/e2e-tests/playwright-log.txt for additional details.</msg>
+<msg time="2025-10-06T11:11:26.288536" level="FAIL">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</msg>
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="FAIL" start="2025-10-06T11:11:25.228203" elapsed="1.061187">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<status status="FAIL" start="2025-10-06T11:11:24.903425" elapsed="1.386072">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:26.490462" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:26.492307" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:26.492392" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:26.490100" elapsed="0.002331"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:26.627424" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:26.492547" elapsed="0.135010"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:26.628102" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:26.627683" elapsed="0.021853"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:26.650083" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:26.649676" elapsed="0.009727"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:26.659925" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:26.659544" elapsed="0.045272"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:26.705090" elapsed="0.244796"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:26.489755" elapsed="0.460219"/>
+</kw>
+<msg time="2025-10-06T11:11:26.950046" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Register</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:24.903142" elapsed="2.046924"/>
+</kw>
+<kw name="Create One Todo">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:26.950871" level="INFO">Clicks the element 'text="New todo list"'.</msg>
+<arg>text="New todo list"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:26.950568" elapsed="0.097718"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:27.048770" level="INFO">Fills the text 'Pick up the groceries' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Pick up the groceries</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.048421" elapsed="0.005034"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:27.053881" level="INFO">Fills the text 'Ask instructions from the family' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Ask instructions from the family</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.053573" elapsed="0.005535"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.059629" level="INFO">Clicks the element 'text="Create"'.</msg>
+<arg>text="Create"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.059259" elapsed="0.039387"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:26.950305" elapsed="0.148452"/>
+</kw>
+<kw name="Open Todo">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.100051" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/a'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.099512" elapsed="0.074363"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:27.099076" elapsed="0.074934"/>
+</kw>
+<kw name="Create Todo Items">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.175189" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.174722" elapsed="0.042172"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.217424" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.217031" elapsed="0.447512"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:27.665108" level="INFO">Fills the text 'Tomato or Tomato' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Tomato or Tomato</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.664763" elapsed="0.004661"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.669819" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.669536" elapsed="0.029209"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.699200" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.698875" elapsed="0.047878"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:27.747226" level="INFO">Fills the text 'Potato or Potato' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Potato or Potato</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.746883" elapsed="0.004888"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.752199" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.751895" elapsed="0.031934"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:27.174345" elapsed="0.609575"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:27.800435" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Tomato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.784124" elapsed="0.016389"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:27.806836" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Potato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.800706" elapsed="0.006199"/>
+</kw>
+<kw name="Modify Todo Item">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.807672" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[1]/div/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[1]/div/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.807358" elapsed="0.024012"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:27.831905" level="INFO">Fills the text 'Caramel or Caramel' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Caramel or Caramel</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.831553" elapsed="0.004869"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.836843" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[1]/div/form/div/div[2]/button[1]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[1]/div/form/div/div[2]/button[1]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.836540" elapsed="0.078785"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:27.807131" elapsed="0.108282"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:27.927297" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nCaramel or Caramel\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Caramel</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.915597" elapsed="0.011797"/>
+</kw>
+<kw name="Go Back To Home Page">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:27.928278" level="INFO">Clicks the element '//html/body/nav/div/div/astro-island/div/a'.</msg>
+<arg>//html/body/nav/div/div/astro-island/div/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:27.927984" elapsed="0.096794"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:27.927735" elapsed="0.097186"/>
+</kw>
+<kw name="Delete Todo List">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:28.026314" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/div/button[3]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/div/button[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.025806" elapsed="0.141262"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:28.167610" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/dialog/div/div/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/dialog/div/div/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.167213" elapsed="0.033730"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:28.025199" elapsed="0.175840"/>
+</kw>
+<msg time="2025-10-06T11:11:28.209415" level="INFO">Switching context to context=28cd74c0-cdd8-47ed-9780-d0f187b2325d in CURRENT</msg>
+<msg time="2025-10-06T11:11:28.213836" level="INFO">Successfully changed active context: context=28cd74c0-cdd8-47ed-9780-d0f187b2325d</msg>
+<msg time="2025-10-06T11:11:28.218006" level="INFO">Successfully closed Context</msg>
+<tag>smoke</tag>
+<status status="PASS" start="2025-10-06T11:11:24.874046" elapsed="3.327147"/>
+</test>
+<test id="s1-t7" name="Create Items And Mark Them As Completed" line="87">
+<kw name="Erase Databases" owner="script">
+<status status="PASS" start="2025-10-06T11:11:28.221128" elapsed="0.027029"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:28.249366" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:28.250584" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:28.250648" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.249004" elapsed="0.001679"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:28.400276" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<msg time="2025-10-06T11:11:28.400333" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.250773" elapsed="0.149659"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:28.400956" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.400561" elapsed="0.028271"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:28.429382" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.428979" elapsed="0.010744"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:28.440227" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.439865" elapsed="0.056783"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.496787" elapsed="0.228036"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:28.248795" elapsed="0.476127"/>
+</kw>
+<msg time="2025-10-06T11:11:28.725000" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Register</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.248470" elapsed="0.476551"/>
+</kw>
+<kw name="Create One Todo">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:28.726169" level="INFO">Clicks the element 'text="New todo list"'.</msg>
+<arg>text="New todo list"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.725699" elapsed="0.126855"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:28.853028" level="INFO">Fills the text 'Pick up the groceries' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Pick up the groceries</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.852687" elapsed="0.004963"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:28.858061" level="INFO">Fills the text 'Ask instructions from the family' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Ask instructions from the family</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.857765" elapsed="0.006064"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:28.864347" level="INFO">Clicks the element 'text="Create"'.</msg>
+<arg>text="Create"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.863979" elapsed="0.034626"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:28.725254" elapsed="0.173602"/>
+</kw>
+<kw name="Open Todo">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:28.899816" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/a'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.899528" elapsed="0.088473"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:28.899246" elapsed="0.089000"/>
+</kw>
+<kw name="Create Todo Items">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:28.990339" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:28.989468" elapsed="0.043216"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:29.033359" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.032845" elapsed="0.434210"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:29.467527" level="INFO">Fills the text 'Tomato or Tomato' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Tomato or Tomato</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.467186" elapsed="0.004812"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:29.472408" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.472115" elapsed="0.042862"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:29.515440" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.515107" elapsed="0.078462"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:29.594434" level="INFO">Fills the text 'Potato or Potato' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Potato or Potato</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.593794" elapsed="0.007442"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:29.601727" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.601379" elapsed="0.030714"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:28.988741" elapsed="0.643442"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:29.648804" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Tomato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.632392" elapsed="0.016491"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:29.655481" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Potato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.649119" elapsed="0.006436"/>
+</kw>
+<kw name="Mark Todo Item As Completed">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:29.656281" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div[1]/span'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div[1]/span</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.656010" elapsed="0.041079"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:29.655777" elapsed="0.041411"/>
+</kw>
+<kw name="Go Back To Home Page">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:29.698089" level="INFO">Clicks the element '//html/body/nav/div/div/astro-island/div/a'.</msg>
+<arg>//html/body/nav/div/div/astro-island/div/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.697741" elapsed="0.074784"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:29.697445" elapsed="0.075178"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:29.841505" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nMy todo lists\nNew todo list\nPick up the groceries\nAsk instructions from the family\n1/2 completed\nDeleting todo list "Pick up the groceries"\n\nThis todo list is not empty.\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>1/2</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.773160" elapsed="0.068431"/>
+</kw>
+<kw name="Delete Todo List">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:29.842465" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/div/button[3]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/div/button[3]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.842166" elapsed="0.081492"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:29.924239" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/dialog/div/div/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/dialog/div/div/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:29.923829" elapsed="0.049710"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:29.841872" elapsed="0.131756"/>
+</kw>
+<msg time="2025-10-06T11:11:29.982516" level="INFO">Switching context to context=a3771264-1ada-481a-adf3-0e56c15f9991 in CURRENT</msg>
+<msg time="2025-10-06T11:11:29.985834" level="INFO">Successfully changed active context: context=a3771264-1ada-481a-adf3-0e56c15f9991</msg>
+<msg time="2025-10-06T11:11:29.989264" level="INFO">Successfully closed Context</msg>
+<tag>smoke</tag>
+<status status="PASS" start="2025-10-06T11:11:28.218580" elapsed="1.755264"/>
+</test>
+<test id="s1-t8" name="Register Another User" line="100">
+<kw name="Erase Databases" owner="script">
+<status status="PASS" start="2025-10-06T11:11:29.992124" elapsed="0.029684"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Register Second Account">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:30.022919" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:30.024064" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:30.024129" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:30.022573" elapsed="0.001591"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:30.167696" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<msg time="2025-10-06T11:11:30.167751" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:30.024253" elapsed="0.143590"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:30.168512" level="INFO">Fills the text 'usertest' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${SECONDUSERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:30.167965" elapsed="0.027099"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:30.195614" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:30.195212" elapsed="0.005857"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:30.201585" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:30.201217" elapsed="0.030899"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-06T11:11:31.305483" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-4.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-4.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-06T11:11:31.305575" level="INFO">See also file:///C:/Users/miska/Desktop/swt-todo-list-app-main/Software-Testing-Project-for-Course-TEKS5466/e2e-tests/playwright-log.txt for additional details.</msg>
+<msg time="2025-10-06T11:11:31.305648" level="FAIL">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</msg>
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="FAIL" start="2025-10-06T11:11:30.232258" elapsed="1.074296">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<status status="FAIL" start="2025-10-06T11:11:30.022365" elapsed="1.284297">URL 'http://localhost:4321/register' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<kw name="Register Second Account">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:31.507794" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:31.509367" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:31.509439" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:31.507467" elapsed="0.002006"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:31.637056" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:31.509566" elapsed="0.127724"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:31.638007" level="INFO">Fills the text 'usertest' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${SECONDUSERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:31.637488" elapsed="0.020982"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:31.659013" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:31.658616" elapsed="0.010106"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:31.669328" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:31.668874" elapsed="0.047497"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:31.716526" elapsed="0.256660"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:31.507194" elapsed="0.466091"/>
+</kw>
+<msg time="2025-10-06T11:11:31.973382" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Register Second Account</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:30.022081" elapsed="1.951336"/>
+</kw>
+<msg time="2025-10-06T11:11:32.001812" level="INFO">Switching context to context=8b25b2f0-1ba9-4c98-9059-2709b0d12803 in CURRENT</msg>
+<msg time="2025-10-06T11:11:32.009671" level="INFO">Successfully changed active context: context=8b25b2f0-1ba9-4c98-9059-2709b0d12803</msg>
+<msg time="2025-10-06T11:11:32.014637" level="INFO">Successfully closed Context</msg>
+<tag>smoke</tag>
+<status status="PASS" start="2025-10-06T11:11:29.990029" elapsed="1.983697"/>
+</test>
+<test id="s1-t9" name="Sharing Todo Lists To Another User" line="105">
+<kw name="Erase Todo Lists And Items" owner="script">
+<status status="PASS" start="2025-10-06T11:11:32.017688" elapsed="0.019551"/>
+</kw>
+<kw name="Erase Test User" owner="script">
+<status status="PASS" start="2025-10-06T11:11:32.037486" elapsed="0.008160"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Register">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:32.046671" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:32.047951" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:32.048026" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.046328" elapsed="0.001736"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:32.215013" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/register</msg>
+<msg time="2025-10-06T11:11:32.215069" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/register</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.048167" elapsed="0.166999"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:32.215756" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.215336" elapsed="0.031209"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:32.247304" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.246884" elapsed="0.007756"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:32.255155" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.254789" elapsed="0.056092"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.311046" elapsed="0.224922"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:32.046133" elapsed="0.489924"/>
+</kw>
+<msg time="2025-10-06T11:11:32.536128" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Register</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.045864" elapsed="0.490283"/>
+</kw>
+<kw name="Create One Todo">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:32.537383" level="INFO">Clicks the element 'text="New todo list"'.</msg>
+<arg>text="New todo list"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.536735" elapsed="0.133134"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:32.670550" level="INFO">Fills the text 'Pick up the groceries' in the given field.</msg>
+<arg>id=name</arg>
+<arg>Pick up the groceries</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.670199" elapsed="0.005419"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:32.676214" level="INFO">Fills the text 'Ask instructions from the family' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Ask instructions from the family</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.675816" elapsed="0.005542"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:32.681812" level="INFO">Clicks the element 'text="Create"'.</msg>
+<arg>text="Create"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.681488" elapsed="0.033246"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:32.536383" elapsed="0.178486"/>
+</kw>
+<kw name="Open Todo">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:32.715654" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[3]/div/div/a'.</msg>
+<arg>//html/body/main/astro-island/div/div[3]/div/div/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.715365" elapsed="0.083316"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:32.715082" elapsed="0.083692"/>
+</kw>
+<kw name="Create Todo Items">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:32.799600" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.799284" elapsed="0.033597"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:32.833358" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:32.833018" elapsed="0.464363"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:33.298021" level="INFO">Fills the text 'Tomato or Tomato' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Tomato or Tomato</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.297681" elapsed="0.004667"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:33.302733" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.302459" elapsed="0.030032"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:33.332960" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/button'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.332625" elapsed="0.051660"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:33.384826" level="INFO">Fills the text 'Potato or Potato' in the given field.</msg>
+<arg>id=description</arg>
+<arg>Potato or Potato</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.384436" elapsed="0.004528"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:33.389396" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/div[2]/div/form/div[2]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.389085" elapsed="0.043749"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:32.799014" elapsed="0.633917"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:33.450634" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Tomato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.433138" elapsed="0.017576"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:33.457176" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Potato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.450922" elapsed="0.006323"/>
+</kw>
+<kw name="Share Todo List">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:33.457973" level="INFO">Clicks the element '//html/body/nav/div/div/astro-island/div/button'.</msg>
+<arg>//html/body/nav/div/div/astro-island/div/button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.457707" elapsed="0.044484"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:33.502690" level="INFO">Clicks the element '//html/body/nav/div/div/astro-island/div/dialog/div/form/div[1]/div[1]/div/div/input'.</msg>
+<arg>//html/body/nav/div/div/astro-island/div/dialog/div/form/div[1]/div[1]/div/div/input</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.502327" elapsed="0.030434"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2025-10-06T11:11:33.533300" level="INFO">Types the text 'usertest' in the given field.</msg>
+<arg>//html/body/nav/div/div/astro-island/div/dialog/div/form/div[1]/div[1]/div/div/input</arg>
+<arg>${SECONDUSERNAME}</arg>
+<arg>delay=100 ms</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:33.532891" elapsed="0.919344"/>
+</kw>
+<kw name="Keyboard Key" owner="Browser">
+<arg>press</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Press a keyboard key on the virtual keyboard or set a key up or down.</doc>
+<status status="PASS" start="2025-10-06T11:11:34.452705" elapsed="0.015674"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:34.468825" level="INFO">Clicks the element '//html/body/nav/div/div/astro-island/div/dialog/div/form/div[4]/button[2]'.</msg>
+<arg>//html/body/nav/div/div/astro-island/div/dialog/div/form/div[4]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:34.468510" elapsed="0.030923"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:33.457477" elapsed="1.042092"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:34.511390" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\nusertest - editor\nAdd users *\nusertest\n⨯\nRole\neditor\nTodo list shared successfully\nClose\nshare\ntestuser Logout\nPick up the groceries\n\nAsk instructions from the family\n\nMembers\ntestuser (you) - owner\nusertest - editor\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify\nShare todo list'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Members</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:34.499903" elapsed="0.011569"/>
+</kw>
+<msg time="2025-10-06T11:11:34.517463" level="INFO">Switching context to context=5cfcbda2-2f85-4e4f-a70d-3740d51cd26f in CURRENT</msg>
+<msg time="2025-10-06T11:11:34.520001" level="INFO">Successfully changed active context: context=5cfcbda2-2f85-4e4f-a70d-3740d51cd26f</msg>
+<msg time="2025-10-06T11:11:34.523479" level="INFO">Successfully closed Context</msg>
+<tag>smoke</tag>
+<status status="PASS" start="2025-10-06T11:11:32.015145" elapsed="2.496524"/>
+</test>
+<test id="s1-t10" name="Get Shared Todolist" line="118">
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Login Second">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:34.527391" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:34.528338" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:34.528395" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:34.527023" elapsed="0.001405"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:34.684072" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/login</msg>
+<msg time="2025-10-06T11:11:34.684130" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:34.528518" elapsed="0.155706"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:34.684764" level="INFO">Fills the text 'usertest' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${SECONDUSERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:34.684360" elapsed="0.026232"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:34.711140" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:34.710737" elapsed="0.007006"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:34.718243" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:34.717881" elapsed="0.033471"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<msg time="2025-10-06T11:11:35.837791" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-5.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-5.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-10-06T11:11:35.837880" level="INFO">See also file:///C:/Users/miska/Desktop/swt-todo-list-app-main/Software-Testing-Project-for-Course-TEKS5466/e2e-tests/playwright-log.txt for additional details.</msg>
+<msg time="2025-10-06T11:11:35.837947" level="FAIL">URL 'http://localhost:4321/login' (str) should be 'http://localhost:4321/todo-lists' (str)</msg>
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="FAIL" start="2025-10-06T11:11:34.751486" elapsed="1.087348">URL 'http://localhost:4321/login' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<status status="FAIL" start="2025-10-06T11:11:34.526795" elapsed="1.312147">URL 'http://localhost:4321/login' (str) should be 'http://localhost:4321/todo-lists' (str)</status>
+</kw>
+<kw name="Login Second">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:36.044439" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:36.046699" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:36.046797" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:36.041857" elapsed="0.004980"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:36.193758" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/login</msg>
+<arg>${URL}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:36.047337" elapsed="0.146604"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:36.194508" level="INFO">Fills the text 'usertest' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${SECONDUSERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:36.194075" elapsed="0.034242"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:36.229102" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:36.228549" elapsed="0.027759"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:36.256841" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:36.256447" elapsed="0.043348"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/todo-lists</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:36.299950" elapsed="0.220120"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:36.040038" elapsed="0.480121"/>
+</kw>
+<msg time="2025-10-06T11:11:36.520235" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Login Second</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:34.526485" elapsed="1.993773"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:36.606627" level="INFO">Text: 'Todo Manager\nMy todo lists\nusertest Logout\nMy todo lists\nNew todo list\n\nCreate your first todo list with the button above\n\nShared with me\nPick up the groceries\nAsk instructions from the family\n0/2 completed\nDeleting todo list "Pick up the groceries"\n\nThis todo list is not empty.\nThis todo list is shared with other users.\n\nAre you sure you want to delete this todo list?\n\nCancel\nDelete\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Shared</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:36.520470" elapsed="0.086238"/>
+</kw>
+<kw name="Open Shared Todo List">
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:36.607529" level="INFO">Clicks the element '//html/body/main/astro-island/div/div[5]/div/div/a'.</msg>
+<arg>//html/body/main/astro-island/div/div[5]/div/div/a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:36.607234" elapsed="0.089497"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:36.606963" elapsed="0.089873"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:37.015394" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\ntestuser - owner\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\nusertest Logout\nPick up the groceries (testuser)\n\nAsk instructions from the family\n\nMembers\nusertest (you) - editor\ntestuser - owner\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Members</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:36.697038" elapsed="0.318442"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:37.023025" level="INFO">Text: 'Todo Manager\nMy todo listsPick up the groceriesShare\nShare todo list\nShared with\ntestuser - owner\nAdd users *\nType to search for users\nRole\neditor\nClose\nshare\nusertest Logout\nPick up the groceries (testuser)\n\nAsk instructions from the family\n\nMembers\nusertest (you) - editor\ntestuser - owner\nNew task\nTomato or Tomato\nPotato or Potato\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Tomato</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.015685" elapsed="0.007426"/>
+</kw>
+<msg time="2025-10-06T11:11:37.030960" level="INFO">Switching context to context=21bd9738-635c-41c8-9492-d1fa29fdbd18 in CURRENT</msg>
+<msg time="2025-10-06T11:11:37.034346" level="INFO">Successfully changed active context: context=21bd9738-635c-41c8-9492-d1fa29fdbd18</msg>
+<msg time="2025-10-06T11:11:37.039148" level="INFO">Successfully closed Context</msg>
+<tag>smoke</tag>
+<status status="PASS" start="2025-10-06T11:11:34.524520" elapsed="2.498801"/>
+</test>
+<test id="s1-t11" name="Login With Wrong Credentials" line="126">
+<kw name="Erase Databases" owner="script">
+<status status="PASS" start="2025-10-06T11:11:37.042287" elapsed="0.026771"/>
+</kw>
+<kw name="Wait Until Keyword Succeeds" owner="BuiltIn">
+<kw name="Login">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:37.070147" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:37.071267" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:37.071330" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.069811" elapsed="0.001553"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:37.252789" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/login</msg>
+<msg time="2025-10-06T11:11:37.252844" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${URL}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.071456" elapsed="0.181476"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:37.253439" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.253055" elapsed="0.029742"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:37.283350" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.282947" elapsed="0.005813"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:37.289256" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.288901" elapsed="0.069773"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:37.069615" elapsed="0.289161"/>
+</kw>
+<msg time="2025-10-06T11:11:37.358868" level="INFO">${result} = None</msg>
+<var>${result}</var>
+<arg>5x</arg>
+<arg>200ms</arg>
+<arg>Login</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.069302" elapsed="0.289587"/>
+</kw>
+<kw name="Login">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-10-06T11:11:37.359833" level="INFO">Switching browser to browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:37.361369" level="INFO">Successfully changed active browser: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<msg time="2025-10-06T11:11:37.361443" level="INFO">Reusing existing browser with id: browser=324e059e-22df-45f0-8b4f-62b321b682aa</msg>
+<arg>headless=${TRUE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.359444" elapsed="0.002036"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-10-06T11:11:37.498585" level="INFO">Successfully initialized new page object and opened url: http://localhost:4321/login</msg>
+<arg>${URL}/login</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.361593" elapsed="0.137123"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:37.499235" level="INFO">Fills the text 'testuser' in the given field.</msg>
+<arg>id=username</arg>
+<arg>${USERNAME}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.498839" elapsed="0.023728"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-10-06T11:11:37.523095" level="INFO">Fills the text 'password' in the given field.</msg>
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.522707" elapsed="0.028633"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-10-06T11:11:37.551840" level="INFO">Clicks the element '//html/body/main/astro-island/div/form/div[3]/button[2]'.</msg>
+<arg>//html/body/main/astro-island/div/form/div[3]/button[2]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.551485" elapsed="0.056184"/>
+</kw>
+<status status="PASS" start="2025-10-06T11:11:37.359168" elapsed="0.248684"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-10-06T11:11:37.639702" level="INFO">Text: 'Todo Manager\nLogin or sign up to get started\nWelcome to Todo Manager\n\nPlease login to use the application.\n\nIn case you do not have an account, you can register through here or through the button below on the left.\n\nIncorrect username or password\nUsername *\nPassword *\nTo Registration\nLogin\nMade with ❤️ , 😓, 🥲 and\nAstro\nSolidJS\nTailwindCSS\nDaisyUI\nIconify'</msg>
+<arg>body</arg>
+<arg>contains</arg>
+<arg>Incorrect</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.608558" elapsed="0.031228"/>
+</kw>
+<kw name="Get Url" owner="Browser">
+<arg>==</arg>
+<arg>http://localhost:4321/login</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the current URL.</doc>
+<status status="PASS" start="2025-10-06T11:11:37.640031" elapsed="0.001382"/>
+</kw>
+<msg time="2025-10-06T11:11:37.647858" level="INFO">Switching context to context=b592f1e9-3dea-4274-8ebf-c4e5b86c57d7 in CURRENT</msg>
+<msg time="2025-10-06T11:11:37.650996" level="INFO">Successfully changed active context: context=b592f1e9-3dea-4274-8ebf-c4e5b86c57d7</msg>
+<msg time="2025-10-06T11:11:37.655311" level="INFO">Successfully closed Context</msg>
+<tag>smoke</tag>
+<status status="PASS" start="2025-10-06T11:11:37.040350" elapsed="0.601240"/>
+</test>
+<test id="s1-t12" name="Erasing" line="134">
+<kw name="Erase Databases" owner="script">
+<status status="PASS" start="2025-10-06T11:11:37.657787" elapsed="0.028990"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2025-10-06T11:11:37.656112" elapsed="0.030946"/>
+</test>
+<status status="PASS" start="2025-10-06T11:11:15.130573" elapsed="22.559171"/>
+</suite>
+<statistics>
+<total>
+<stat pass="12" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="9" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="12" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

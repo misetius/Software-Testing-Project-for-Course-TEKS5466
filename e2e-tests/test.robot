@@ -123,8 +123,12 @@ Get Shared Todolist
     Get Text    body    contains    Tomato
 
 
-
-
+Login With Wrong Credentials
+    Erase_databases
+    ${result}    Wait Until Keyword Succeeds    5x    200ms    Login
+    Login
+    Get Text    body    contains    Incorrect
+    Get Url    ==    http://localhost:4321/login 
 
 
 Erasing
@@ -185,7 +189,8 @@ Login Second
     Fill Text    id=username    ${SECONDUSERNAME}
     Fill Text    id=password    ${PASSWORD}    
     Click    //html/body/main/astro-island/div/form/div[3]/button[2]
-
+    Get Url    ==    http://localhost:4321/todo-lists
+    
 Create One Todo
     Click    text="New todo list"
     Fill Text    id=name    Pick up the groceries
