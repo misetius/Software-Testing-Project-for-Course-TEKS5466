@@ -39,6 +39,8 @@ E2E-tests cover happy paths for:
 - Sharing a todo list with another user (as the list owner)
 - Viewing a shared todo list and its items (as the recipient/editor)
 
+E2E-tests and API-tests also cover some negative paths. One API-test for example covers adding todo task with no description to created todo list. One E2E covers negative path for logging in with wrong credentials.
+
 ## OUT OF SCOPE
 
 To make manual tests more comprehensive and more scripted manual could be used to complement the freestyle way the manual tests were done. 

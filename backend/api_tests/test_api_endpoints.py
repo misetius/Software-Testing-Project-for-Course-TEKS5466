@@ -15,6 +15,8 @@ def test_add_todo_list_for_user(headers, url):
     assert  author == "testuser1"
     assert description == "remember to ask family"
 
+
+
 def test_get_todo_lists_of_users(headers, url):
     s = requests.session()
     response = s.get(url+"api/todo-lists/", headers=headers)
@@ -23,6 +25,8 @@ def test_get_todo_lists_of_users(headers, url):
     description = json[0]["description"]
     assert  author == "testuser1"
     assert description == "remember to ask family"
+
+
 
 def test_add_item_to_todolist(headers, url):
     s = requests.session()
@@ -41,9 +45,6 @@ def test_add_item_to_todolist(headers, url):
     description2 = json2["description"]
     assert description1 == "tomato or tomato"
     assert description2 == "potato or potato"
-
-
-
 
 
 
@@ -82,6 +83,7 @@ def test_delete_todo_list_that_exists(headers, url):
 
     assert response.text == "true"
     assert emptyresponse.text == "[]"
+
 
 
 def test_add_item_to_todolist_fails_with_no_description(headers, url):
