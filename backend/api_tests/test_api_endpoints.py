@@ -45,6 +45,8 @@ def test_add_item_to_todolist(headers, url):
 
 
 
+
+
 def test_delete_todo_items_of_todo_list(headers, url):
     s = requests.session()
     response = s.get(url+"api/todo-lists/", headers=headers)
@@ -80,3 +82,24 @@ def test_delete_todo_list_that_exists(headers, url):
 
     assert response.text == "true"
     assert emptyresponse.text == "[]"
+
+
+def test_add_item_to_todolist_fails_with_no_description(headers, url):
+    s = requests.session()
+    data = '{"name":"Pick up groceries", "description":"remember to ask family"}'
+    response = s.post(url+"api/todo-lists/",headers=headers, data=data)
+    json = response.json()
+    response = s.get(url+"api/todo-lists/", headers=headers)
+    json = response.json()
+    todo_list_id = json[0]["id"]
+    url2 = url+"api/todo-lists/"
+    url2 += f"{todo_list_id}/todos"
+    data1 = '{}'
+    data2 = '{}'
+    response1 = s.post(url2, headers=headers, data=data1)
+    response2 = s.post(url2, headers=headers, data=data2)
+    json1 = response1.json()
+    json2 = response2.json()
+  
+    assert json1 == {'detail': "[{'type': 'missing', 'loc': ('body', 'description'), 'msg': 'Field required', 'input': {}}]"}
+    assert json2 == {'detail': "[{'type': 'missing', 'loc': ('body', 'description'), 'msg': 'Field required', 'input': {}}]"}
