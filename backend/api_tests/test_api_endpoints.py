@@ -47,12 +47,7 @@ def test_add_item_to_todolist(headers, url):
 
 
 def test_delete_todo_items_of_todo_list(headers, url):
-    #s = requests.session()
-    #response = s.get(url+"api/todo-lists/", headers=headers)
-    #json = response.json()
-    #todo_list_id = json[0]["id"]
-    #url2 = url+"api/todo-lists/"
-    #url2 += f"{todo_list_id}/todos"
+
     url2, response = get_todo_list_todo_items_in_it(headers, url)
     json = response.json()
     id1 = json[0]["id"]
